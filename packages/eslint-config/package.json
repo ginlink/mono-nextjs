@@ -1,6 +1,6 @@
 {
   "name": "@ginlink/eslint-config",
-  "version": "0.1.0",
+  "version": "0.1.2-alpha.0",
   "description": "React common eslint config",
   "main": "lib/index.js",
   "private": false,
@@ -18,7 +18,8 @@
     "url": "https://github.com/ginlink/cool-uilib/issues"
   },
   "homepage": "https://github.com/ginlink/cool-uilib#readme",
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.22.0",
     "@typescript-eslint/parser": "^5.22.0",
     "eslint": "^8.14.0",
@@ -28,7 +29,6 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.5.0"
   },
-  "dependencies": {},
   "peerDependencies": {
     "eslint": "^8.14.0",
     "prettier": "^2.1.2"
