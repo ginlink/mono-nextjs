@@ -26,4 +26,4 @@ jobs:
       - name: install
         run: yarn
       - name: lint
-        run: yarn fix
+        run: yarn lint
