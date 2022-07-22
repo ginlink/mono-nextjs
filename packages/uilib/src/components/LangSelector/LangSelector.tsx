@@ -50,4 +50,5 @@ const LangSelector: React.FC<Props> = ({
   </Dropdown>
 )
 
+// eslint-disable-next-line react/display-name
 export default React.memo(LangSelector, (prev, next) => prev.currentLang === next.currentLang)
