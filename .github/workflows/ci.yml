@@ -23,5 +23,7 @@ jobs:
             node_modules
             */*/node_modules
           key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
+      - name: install
+        run: yarn
       - name: lint
         run: yarn fix
