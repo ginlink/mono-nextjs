@@ -68,4 +68,5 @@ const Logo: React.FC<Props> = ({ isDark, href }) => {
   )
 }
 
+// eslint-disable-next-line react/display-name
 export default React.memo(Logo, (prev, next) => prev.isDark === next.isDark)

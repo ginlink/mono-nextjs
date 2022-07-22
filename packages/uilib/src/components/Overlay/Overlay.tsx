@@ -1,7 +1,6 @@
 import styled, { css, keyframes } from 'styled-components'
 import { FC, useEffect } from 'react'
 import { Box, BoxProps } from '../Box'
-import React from 'react'
 
 const unmountAnimation = keyframes`
     0% {
