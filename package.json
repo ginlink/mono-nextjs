@@ -1,5 +1,5 @@
 {
-  "name": "@ginlink/uilib_monorepo_example",
+  "name": "@ginlink/monorepo-nextjs",
   "version": "0.1.0",
   "description": "",
   "main": "dist/index.cjs.js",
