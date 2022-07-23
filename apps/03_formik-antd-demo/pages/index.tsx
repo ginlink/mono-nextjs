@@ -1,10 +1,12 @@
 import type { NextPage } from 'next'
+import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import SampleForm from './form'
-import Overview from './overview'
-import SampleTable from './table'
+
+const Overview = dynamic(() => import('./overview'), { ssr: false })
+const SampleForm = dynamic(() => import('./form'), { ssr: false })
+const SampleTable = dynamic(() => import('./table'), { ssr: false })
 
 const Home: NextPage = () => {
   return (
