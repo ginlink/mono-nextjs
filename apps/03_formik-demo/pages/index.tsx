@@ -2,6 +2,9 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import SampleForm from './form'
+import Overview from './overview'
+import SampleTable from './table'
 
 const Home: NextPage = () => {
   return (
@@ -13,38 +16,30 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <h1>Overview</h1>
 
-        <p className={styles.description}>
-          Get started by editing <code className={styles.code}>pages/index.tsx</code>
-        </p>
+        <Overview />
+      </main>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+      <hr />
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+      <main className={styles.main}>
+        <h1>SampleForm</h1>
 
-          <a href="https://github.com/vercel/next.js/tree/canary/examples" className={styles.card}>
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+        <SampleForm />
+      </main>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
-          </a>
-        </div>
+      <hr />
+
+      <main className={styles.main}>
+        <h1>SampleTable</h1>
+
+        <SampleTable
+          onSubmit={(values) => {
+            console.log('[values]:', values)
+          }}
+          initialValues={undefined}
+        />
       </main>
 
       <footer className={styles.footer}>
